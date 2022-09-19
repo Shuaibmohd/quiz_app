@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+:root{
+    --main-clr: #0075FF;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color:cornsilk;
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 600px;
+    background: var(--main-clr);
+    color: #fff;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.quiz-header {
+    padding: 4em;
+}
+.quiz-header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.quiz-header ul li{
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+.quiz-header ul li label{
+    cursor: pointer;
+}
+.quiz-header input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+
+button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+button:hover{
+    opacity: 0.85;
+}
+
+button:active{
+    transform: scaleY(0.98);
+}
+button:focus{
+    outline: none;
+}
+
+
+@media(max-width: 769px){
+    h3 {
+        font-size: 1em;
+    }
+    .quiz-header ul li{
+        font-size: 1em;
+        margin: 1em 0;
+    }
+}
+
